@@ -1,0 +1,11 @@
+{
+	"title": "watch",
+	"properties": {
+		"_id": {"type": "string"},
+		"title": {"type": "string"},
+		"color": {"type": "int"},
+		"active": {"type": "int"},
+		"description": { "type": "string"}
+	},
+	"required": [ "_id", "title", "color" ]
+}

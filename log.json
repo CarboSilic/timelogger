@@ -1,0 +1,9 @@
+{
+	"title": "log",
+	"properties": {
+		"watch_id": {"type": "string"},
+		"start": {"type": "date"},
+		"stop": {"type": "date"}
+	},
+	"required": [ "watch_id", "start", "stop"]
+}
