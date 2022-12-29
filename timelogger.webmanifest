@@ -1,0 +1,22 @@
+{
+    "id": "/index.html",
+    "name": "Timelogger - log time spent on different activities",
+    "short_name": "Timelogger",
+    "start_url": "index.html",
+    "scope": ".",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "description": "Know your time",
+    "dir": "ltr",
+    "lang": "en-US",
+    "orientation": "portrait-primary",   
+    "icons": [
+        {
+            "src": "img/favicon.svg",
+            "sizes": "32x32 57x57 76x76 96x96 120x120 128x128 144x144 152x152 180x180 192x192 196x196 228x228 512x512",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        }
+    ] 
+}
