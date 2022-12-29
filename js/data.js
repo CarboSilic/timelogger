@@ -36,11 +36,11 @@ function getDB() {
 
             const log = db.createObjectStore('log', { keyPath: ['watch_id', 'start']});
             log.createIndex('startstop_index', ['start', 'stop'], { unique: true });
-            log.createIndex('watch_index', 'watch_id', { unique: false });  
-            
+            log.createIndex('watch_index', 'watch_id', { unique: false });              
 
-              log.transaction.oncomplete = (evnt) => {
-              const txn = db.transaction(['watchlist', 'log'], 'readwrite');
+/*
+            log.transaction.oncomplete = (evnt) => {
+                const txn = db.transaction(['watchlist', 'log'], 'readwrite');
 
                 const wlos = txn.objectStore('watchlist');
                 wlos.add({ title: 'First Test Watch', color: '#ff0000', active: 1});
@@ -65,6 +65,7 @@ function getDB() {
                      }
                 }
             };
+*/            
         };
 
         request.onsuccess = (ev) => {
