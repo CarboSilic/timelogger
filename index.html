@@ -14,13 +14,11 @@
                 <div class="cols">
                     <div>
                         <label for="watch-color">Color</label>
-                        <input type="color" id="watch-color" value="#ffffff" class="invalid">
-                        <span></span>                        
+                        <input type="color" id="watch-color" value="#ffffff" class="invalid">                                              
                     </div>
                     <div>
                         <label for="watch-title">Title</label>
-                        <input type="text" id="watch-title" class="invalid">
-                        <span></span>
+                        <input type="text" id="watch-title" class="invalid">                        
                     </div>
                 </div>                
                 <label for="watch-descr">Description</label>
@@ -55,17 +53,23 @@
         </fieldset>
         <fieldset>
             <legend>Logged Time</legend>
-            <span class="padded">
-                <input type="radio" name="date-interval" id="today" value="today" checked>
-                <label for="today"> Today </label>
-            </span>
-            <span class="padded">
-                <input type="radio" name="date-interval" id="from-to" value="from-to">                
-                <label for="from-date"> From </label>
-                <input type="date" id="from-date">
-                <label for="to-date"> To </label>
-                <input type="date" id="to-date">                
-            </span>
+            <div class="form-row">
+                <div>
+                    <input type="radio" name="date-interval" id="today" value="today" checked>
+                    <label for="today"> Today </label>
+                </div>
+                <div>
+                    <div class="inl">
+                        <input type="radio" name="date-interval" id="from-to" value="from-to">                
+                        <label for="from-date"> From </label>
+                        <input type="date" id="from-date">
+                    </div>
+                    <div class="inl">
+                        <label for="to-date"> To </label>
+                        <input type="date" id="to-date">
+                    </div>
+                </div>
+            </div>
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" id="svgElement" viewBox="0 0 400 400"></svg>
             </div>

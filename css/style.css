@@ -133,9 +133,7 @@ label[for="watch-select"] {
     border: 1px solid darkgray;
     margin-bottom: .2em;
 }
-.padded {
-    padding-left: .7rem;
-}
+
 .ok-cancel {
     min-width: 10rem;
 }
@@ -148,4 +146,19 @@ input.invalid + span::after {
     content: '*';
     color: red;
     font-size: 1.5rem;
+}
+.inl {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 425px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    html {
+        font-size: 10px;
+    }
 }
