@@ -1,5 +1,5 @@
 export function GetSelectedWatch() {
-    return localStorage.getItem('selected_watch');
+    return Number(localStorage.getItem('selected_watch'));
 }
 
 export function SetSelectedWatch(sw) {

@@ -66,7 +66,7 @@ function createLedendEntry(label, color, active, x, y, padding) {
            `\n<text x="${x + 1.5 * padding}" y=${y + padding} font-size="${padding * 1.4}" fill=${active ? "black" : "gray"}>${label}</text>`;
 }
 
-function getChartContent(watchlist, data, padding, tick, x0, y0, xMax, yMax, yScale) {
+function getChartContent(watchlist, data, padding, tick, x0, y0, xMax, yMax, yScale) {    
     let ret = '';
 
     let barwidth = (xMax - x0);
@@ -76,7 +76,7 @@ function getChartContent(watchlist, data, padding, tick, x0, y0, xMax, yMax, ySc
 
     let n = 0;
     for (let watch of watchlist) {
-        const d = data.get(watch._id);        
+        const d = data.get(watch._id);
         if (d) {
             ret += createBar(d, x0, y0, tick, yScale, n, barwidth, watch.color);
             ret += createLedendEntry(watch.title, watch.color, watch.active, lx0, yMax + 2 * padding * n, padding);
@@ -102,8 +102,7 @@ function showSummary(fromTime, toTime) {
         watchlist = wl;
         getData(fromTime, toTime)
         .then((data) => {
-            if (data && watchlist) {
-                console.log('Data received: ', data, watchlist);
+            if (data && watchlist) {                
                 let maxVal = 0;
                 for (let k of data.keys()) {
                     const v = data.get(k) / 3600000; 
