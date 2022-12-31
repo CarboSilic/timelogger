@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
     <ellipse cx="255" cy="255" rx="255" fill="white"/>
     <g stroke="black" stroke-width="30" stroke-linecap="round" fill="none">
         <path d="M365 64.47 A220 220 0 1 0 255 475" />
