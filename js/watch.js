@@ -141,7 +141,7 @@ function ClearWatchToAdd() {
         wc.classList.remove('valid');
         wc.classList.add('invalid');
     }    
-    document.getElementById('watch-descr').innerText = '';
+    document.getElementById('watch-descr').value = '';
     document.getElementById('add-watch-ok').disabled = true;
 }
 
