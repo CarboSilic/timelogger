@@ -169,7 +169,11 @@ window.onload = () => {
     const startstop = document.getElementById('startstop');
     
     FillWatchList();
-    document.getElementById('watch-list').addEventListener('mouseleave', () => {
+    const wl = document.getElementById('watch-list');
+    wl.addEventListener('mouseleave', () => {
+        document.getElementById('watch-select').checked = false;
+    });
+    wl.addEventListener('blur', () => {
         document.getElementById('watch-select').checked = false;
     });
 
